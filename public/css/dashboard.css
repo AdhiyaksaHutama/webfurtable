@@ -1,0 +1,184 @@
+body {
+    font-size: .875rem;
+  }
+
+  .feather {
+    width: 16px;
+    height: 16px;
+  }
+
+  /*
+   * Sidebar
+   */
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    /* rtl:raw:
+    right: 0;
+    */
+    bottom: 0;
+    /* rtl:remove */
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+
+  @media (max-width: 767.98px) {
+    .sidebar {
+      top: 5rem;
+    }
+  }
+
+  .sidebar-sticky {
+    height: calc(100vh - 48px);
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+  }
+
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #727272;
+  }
+
+  .sidebar .nav-link.active {
+    color: #AF7735;
+  }
+
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+
+  .sidebar-heading {
+    font-size: .75rem;
+  }
+
+  /*
+   * Navbar
+   */
+
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  }
+
+  .navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+
+  .navbar .form-control {
+    padding: .75rem 1rem;
+  }
+
+  .form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+  }
+
+  .form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+
+  /* analytic-jumlah */
+  .analytic-jumlah .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1rem;
+  }
+
+  .analytic-jumlah .row .card{
+    background-color: #898787;
+    margin-left: 2;
+    width: 15rem;
+  }
+
+  .card-body a{
+    border: none;
+  }
+
+  .card-main{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-left{
+    margin-top: 0.1rem;
+  }
+
+  .card-right{
+    size: 4rem;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem 2rem;
+  }
+
+  .feather-size4{
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #000000;
+    border-color: black;
+    border-radius: 1rem;
+}
+
+.feather-size1{
+    width: 1rem;
+    height: 1rem;
+    color: #ffffff;
+    border-color: rgb(255, 255, 255);
+    border-radius: 1.5rem;
+}
+
+  .analytic-jumlah .row .card .card-body{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .analytic-jumlah .row .card .card-body .card-title{
+    font-size: small;
+  }
+
+  /* .detail-barang .row{
+    display: inline-flex;
+  } */
+
+
+
+/* .search{
+    display: flex;
+    align-items: center;
+  } */
+
+  /* .filter {
+    margin-left: 10px;
+  }
+
+  .category,
+  .flashsale {
+    margin-left: 10px;
+  } */
+
+
+
+/* .row .filter .category {
+    width: 20%;
+}
+
+.row .filter .flashsale {
+    width: 20%;
+}
+.row .filter button {
+    width: 20%;
+} */

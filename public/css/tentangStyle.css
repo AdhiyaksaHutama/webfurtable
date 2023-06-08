@@ -1,0 +1,675 @@
+:root {
+    --button: #AF7735;
+    --font: #181823;
+    --bg: #ffffff;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: var(--bg);
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #AF7735; */
+    background-color: #ffffff;
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-family: "Noto Sans";
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--font);
+}
+
+.navbar .navbar-logo img {
+    width: 2.188rem;
+    height: 1.954rem;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    margin-left: 5rem;
+}
+
+.navbar .navbar-nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--font);
+    margin: 0 1.5rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--button);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--button);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra {
+    display: flex;
+}
+
+.navbar .navbar-extra .search-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(129, 129, 148, 0.2);
+    border-radius: 0.625rem;
+    padding: 0.938rem 1.75rem;
+}
+
+.navbar .navbar-extra .search-box img {
+    margin-right: 0.992rem;
+    margin-bottom: 0.2rem;
+}
+
+.navbar .navbar-extra .search-box input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: rgba(223, 223, 229, 0.2);
+}
+
+.navbar .navbar-extra .menu {
+    color: var(--font);
+    margin: 0.8rem 0 0 1rem;
+}
+
+.navbar .navbar-extra .menu:hover {
+    color: var(--button);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* atas gambar */
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    gap: 95.12px;
+
+    background: linear-gradient(0.82deg, rgba(175, 119, 53, 0.8) 0.73%, #926025 153.29%);
+    border-radius: 0px;
+    margin-bottom: 120px;
+}
+
+.hero img{
+    width: 100%;
+    max-width: 482.88px;
+    height: 494.9px;
+    margin-top: 6.5rem;
+}
+
+.hero .text{
+    width: 632px;
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+.hero .text h1{
+    font-weight: 700;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.hero .text p{
+    width: 613px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+/* apa itu furtable */
+
+.apaitu{
+    justify-content: center;
+    font-family: 'Lato';
+    font-style: normal;
+    margin-bottom: 120px;
+}
+
+.apaitu h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    color: #181823;
+    margin-bottom: 60px;
+}
+
+.apaitu .desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 67px;
+}
+
+.apaitu .desc img{
+    width: 100%;
+    max-width: 421px;
+}
+
+.apaitu .desc p{
+    font-weight: 400;
+    font-size: 20px;
+    width: 712px;
+    color: #181823;
+}
+
+/* goals furtable */
+.goals{
+    width: 100%;
+    height: 700px;
+    background: rgba(175, 119, 53, 0.8);
+    justify-content: center;
+    font-family: 'Lato';
+    font-style: normal;
+    margin-bottom: 120px;
+}
+
+.goals h1{
+    padding-top: 105px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.goals .isi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+.goals .isi img{
+    width: 100%;
+    max-width: 380px;
+}
+
+.goals .isi p{
+    font-weight: 400;
+    font-size: 20px;
+    width: 712px;
+    color: #ffffff;
+}
+
+
+/* Bertemu kami */
+
+.bertemu {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    font-style: normal;
+    /* background-color: antiquewhite; */
+}
+
+.bertemu .judul{
+    display: flex;
+    justify-content: center;
+}
+
+.bertemu h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #181823;
+}
+
+.bertemu .judul h4 {
+    display: flex;
+    text-align: center;
+    max-width: 754px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #181823;
+}
+
+.bertemu .container{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 2.5rem;
+}
+
+.bertemu .container .card{
+    /* width: 15.625rem; */
+    /* height: 17.5rem; */
+    /* padding-left: 36px; */
+    border: none;
+}
+
+
+.bertemu .container .card .inner-card {
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bertemu .container .card img{
+    width: 100%;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    transition: 0.3s ease-out;
+}
+
+
+.bertemu .container .card .tulisan {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.bertemu .container .card h3 {
+    /* width: 222px; */
+    margin-bottom: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #181823;
+}
+
+.bertemu .container .card .tulisan p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #818194;
+    margin-bottom: 120px;
+}
+
+.bertemu .card img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+/* sosmed */
+
+.sosmed{
+    justify-content: center;
+    background: rgba(175, 119, 53, 0.8);
+    height: 700px;
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+.sosmed .judul{
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.sosmed h1{
+    padding-top: 80px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.sosmed .judul h2{
+    width: 754px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sosmed .container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 812px;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    /* margin-top: 2.5rem; */
+    margin: auto;
+}
+
+.sosmed .container .kotak{
+    transition: 0.3s ease-out;
+    overflow: visible;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    width: 366px;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    padding-left: 30px;
+    gap: 32px;
+    cursor: pointer;
+}
+
+.sosmed .container .kotak img{
+    width: 46px;
+}
+
+.sosmed .container .kotak p{
+    margin-top: 16px;
+    color: #181823;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.sosmed .container .kotak:hover{
+    transform: translateY(-5px);
+}
+
+
+/* Download aplikasi kami */
+.download{
+    display: flex;
+    /* background-color: #5F4221; */
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin: 180px 7%;
+}
+
+.download .content{
+    /* background-color: antiquewhite; */
+    align-items: center;
+    width: 100%;
+    max-width: 709px;
+    font-family: 'Lato';
+    font-style: normal;
+    padding-left: 5%;
+}
+
+.download .content h2{
+    align-items: center;
+    width: 709px;
+    color: #5F4221;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.download .content p{
+    height: 80px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.download .down-img img{
+    width: 100%;
+    max-width: 551px;
+    height: 548px;
+    padding-left: 5%;
+}
+
+.download .content .cta {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1.1rem 3rem;
+    font-size: 1.125rem;
+    color: #ffffff;
+    background-color: var(--button);
+    text-decoration: none;
+    border-radius: 0.875rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 16rem;
+    height: 3.75rem;
+    text-align: center;
+}
+
+.download .content .cta:hover{
+    transform: scale(1.1);
+}
+
+/* Produk Populer */
+
+.populer {
+    margin: 6.25rem 7% 0 7%;
+    /* justify-content: center; */
+}
+
+.populer h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.125rem;
+    margin-bottom: 3.75rem;
+}
+
+.populer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.688rem;
+    margin-top: 2.5rem;
+    
+}
+  
+.populer .container .card {
+    width: 17.5rem;
+    height: 29.375rem;
+    background: #FFFFFF;
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.12);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.populer .container .card .deskripsi {
+    margin: 1.25rem 0 0 1.375rem;
+}
+
+.populer .container .card .deskripsi h4 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #818194;    
+}
+
+.populer .container .card .deskripsi h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.populer .container .card .deskripsi h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.populer .container .card p { 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: end;
+    margin: 1.5rem 2rem 0 0;
+}
+
+.populer .cta a {
+    padding: 1.1rem 3rem;
+    background-color: var(--button);
+    border-radius: 0.875rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 16rem;
+    height: 3.75rem;
+    text-align: center;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+.populer .cta {
+    justify-content: center;
+    display: flex;
+}
+
+.populer .cta:hover{
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #3c4048;
+    background: -webkit-linear-gradient(59deg, #3a6073, #16222a);
+    background: linear-gradient(59deg, #293b45, #16222a);
+    color: white;
+    margin-top: 100px;
+    padding: 1rem 7% 1rem 7%;
+    bottom: 0;
+}
+footer .row {
+    margin: 40px 3% 0 8%;
+    padding-bottom: 80px;
+    
+}
+
+footer img {
+    max-width: 223px;
+    width: 100%;
+}
+
+footer h4 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+footer a {
+    /* background-color: aqua; */
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 1rem 1rem 1rem 0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--button);
+    text-decoration: none;
+}
+
+footer h5 {
+    width: 306px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.copy {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    color: #ffffff;
+
+
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 94%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    html {
+        font-size: 87%;
+    }
+    #hamburger-menu {
+        display: inline-block;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #e4d5c3;
+        border-radius: 0 0 0 1.5rem;
+        width: 11rem;
+        height: 17rem;
+        transition: 0.3s;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        display: block;
+        margin: 2rem 3rem;
+        align-items: center;
+        font-size: 1.4rem;
+    }
+
+}
+
+/* Mobile Phone */
+@media (max-width: 510px) {
+    html {
+        font-size: 55%;
+    }
+}
